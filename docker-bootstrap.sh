@@ -11,6 +11,7 @@ echo "Setting WP Config Options"
 wp config set WP_HOME http://localhost:3000 --type=constant --allow-root
 wp config set WP_SITEURL http://localhost:3000 --type=constant --allow-root
 wp config set WP_DEBUG true --raw --type=constant --allow-root
+wp config set WP_DEBUG_LOG true --raw --type=constant --allow-root
 wp config set WP_DEBUG_DISPLAY false --raw --type=constant --allow-root
 
 # Plugins

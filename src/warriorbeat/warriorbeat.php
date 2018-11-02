@@ -87,7 +87,15 @@ add_action('after_setup_theme', function () {
 
 
 });
+/* Echo variable
+ * Description: Uses <pre> and print_r to display a variable in formated fashion
+ */
+function echo_log($what)
+{
+	echo '<pre>' . print_r($what, true) . '</pre>';
+}
 
+// Retrieves and inserts author information into args
 function nest_author($args, $key, $trigger)
 {
 	$user = get_userdata($trigger->post->post_author);
@@ -108,16 +116,32 @@ function nest_author($args, $key, $trigger)
 	return $args;
 }
 
+// Nest Media Information
 function nest_media($source, $id, $title, $credits = '', $caption = '')
 {
 	$media = array(
 		'mediaId' => $id,
 		'source' => $source,
-		// 'source' => 'http://www.apimages.com/Images/Ap_Creative_Stock_Header.jpg',
 		'title' => $title
 	);
 	return $media;
 
+}
+
+// Get Post Categories and return array of their data
+function nest_categories($post_ID)
+{
+	$post_cats = wp_get_post_categories($post_ID);
+	$cats = array();
+
+	foreach ($post_cats as $c) {
+		$cat = get_category($c);
+		$cats[] = array(
+			'categoryId' => (string)$cat->cat_ID,
+			'name' => (string)$cat->name
+		);
+	}
+	return $cats;
 }
 
 // Merge Tags for Inserting arrays as Nests
@@ -133,6 +157,9 @@ function insert_nest($args, $notif, $trigger)
 			$thumb_id = get_post_thumbnail_id($trigger->post->ID);
 			$thumb_title = $trigger->post->post_title;
 			$args[$key] = nest_media($thumb_url, $thumb_id, $thumb_title, '', $thumb_caption);
+		}
+		if ((string)$val == 'wb_nested_categories') {
+			$args[$key] = nest_categories($trigger->post->ID);
 		}
 	}
 	return $args;
@@ -150,19 +177,30 @@ add_action('notification/trigger/registered', function ($trigger) {
 		return;
 	}
 
+	// Nested Author
 	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
-		'slug' => 'nested_author',
+		'slug' => 'post_nest_author',
 		'name' => __('Nested Author Data', 'Inserts author data to post request.'),
 		'resolver' => function ($trigger) {
 			return 'wb_nested_author';
 		},
 	)));
 
+	// Nested Featured Media
 	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
 		'slug' => 'post_featured_media',
 		'name' => __('Post Featured Media', 'Inserts post thumbnail data.'),
 		'resolver' => function ($trigger) {
 			return 'wb_featured_media';
+		},
+	)));
+
+	// Nested (Array of) Categories
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_nested_categories',
+		'name' => __('Nested Categories', 'Inserts Post Category data.'),
+		'resolver' => function ($trigger) {
+			return 'wb_nested_categories';
 		},
 	)));
 });
