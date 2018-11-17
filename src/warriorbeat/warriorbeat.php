@@ -104,12 +104,12 @@ function nest_author($args, $key, $trigger)
 	$author_data = array(
 		'authorId' => $author->ID,
 		'name' => $author->display_name,
-		'title' => implode(', ', $user->roles),
+		'title' => $user->roles,
 		'description' => $author_meta->description != null ? $author_meta->description : "Staff Member"
 	);
 	$author_data['profile_image'] = array(
 		'name' => $author->user_nicename,
-		'source' => get_avatar_url($author->ID),
+		'source' => get_avatar_url($author->ID, array('size' => 512)),
 		'mediaId' => $author->ID
 	);
 	$args[$key] = $author_data;
@@ -162,6 +162,7 @@ function insert_nest($args, $notif, $trigger)
 			$args[$key] = nest_categories($trigger->post->ID);
 		}
 	}
+	// echo_log($args);
 	return $args;
 }
 add_filter('notification/webhook/args', 'insert_nest', 10, 3);
