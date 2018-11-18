@@ -161,8 +161,10 @@ function insert_nest($args, $notif, $trigger)
 		if ((string)$val == 'wb_nested_categories') {
 			$args[$key] = nest_categories($trigger->post->ID);
 		}
+		if ((string)$val == 'wb_iso_createdate') {
+			$args[$key] = get_the_date('c', $trigger->post->ID);
+		}
 	}
-	// echo_log($args);
 	return $args;
 }
 add_filter('notification/webhook/args', 'insert_nest', 10, 3);
@@ -177,6 +179,15 @@ add_action('notification/trigger/registered', function ($trigger) {
 	if (!in_array($trigger->get_slug(), $trig_slugs)) {
 		return;
 	}
+
+	// ISO Post Creation Date
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_create_datetimeiso',
+		'name' => __('Post ISO Create Datetime', 'Get Creation date of Post in ISO format.'),
+		'resolver' => function ($trigger) {
+			return 'wb_iso_createdate';
+		},
+	)));
 
 	// Nested Author
 	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
