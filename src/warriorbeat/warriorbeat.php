@@ -164,6 +164,9 @@ function insert_nest($args, $notif, $trigger)
 		if ((string)$val == 'wb_iso_createdate') {
 			$args[$key] = get_the_date('c', $trigger->post->ID);
 		}
+		if ((string)$val == 'wb_nested_poll_answers') {
+			$args[$key] = $trigger->poll['answers'];
+		}
 	}
 	return $args;
 }

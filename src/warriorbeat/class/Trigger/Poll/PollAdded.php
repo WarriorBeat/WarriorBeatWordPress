@@ -42,6 +42,21 @@ class PollAdded extends PollTrigger
         }
 
         $this->param = $param;
+        $this->poll = get_poll_template_by_me($param);
+        $this->poll['date'] = date('c');
+        $poll_answers = $this->poll['answers'];
+        foreach ($poll_answers as $key => $val) {
+            $ans_id = $poll_answers[$key]->polla_qid;
+            $ans = $poll_answers[$key]->polla_answers;
+            $ans_votes = $poll_answers[$key]->polla_votes;
+
+            $poll_answers[$key] = array(
+                'answerId' => $ans_id,
+                'answer' => $ans,
+                'votes' => $ans_votes
+            );
+        };
+        $this->poll['answers'] = $poll_answers;
 
     }
 
