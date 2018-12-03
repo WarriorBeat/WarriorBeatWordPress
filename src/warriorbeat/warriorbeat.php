@@ -216,3 +216,11 @@ add_action('notification/trigger/registered', function ($trigger) {
 		},
 	)));
 });
+
+// On new Poll
+add_action('wp_polls_add_poll', function ($pollid) {
+	do_action('wb_poll_added', $pollid, true);
+});
+
+// Register Custom Triggers
+register_trigger(new BracketSpace\Notification\WarriorBeat\Trigger\Poll\PollAdded());
