@@ -225,5 +225,20 @@ add_action('wp_polls_add_poll', function ($pollid) {
 	do_action('wb_poll_added', $pollid, true);
 });
 
+// On Poll Vote
+add_action('wp_polls_vote_poll_success', function () {
+	// Get Poll ID
+	$poll_id = (int)(isset($_REQUEST['poll_id']) ? (int)sanitize_key($_REQUEST['poll_id']) : 0);
+	if ($poll_id === 0) {
+		_e('Invalid Poll ID', 'wp-polls');
+		exit();
+	}
+	// Poll Data
+	$poll = get_poll_template_by_me($poll_id);
+	do_action('wb_poll_voted', $poll, true);
+});
+
+
 // Register Custom Triggers
 register_trigger(new BracketSpace\Notification\WarriorBeat\Trigger\Poll\PollAdded());
+register_trigger(new BracketSpace\Notification\WarriorBeat\Trigger\Poll\PollVoted());

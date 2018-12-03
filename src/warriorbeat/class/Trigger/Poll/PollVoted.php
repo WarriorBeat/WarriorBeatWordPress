@@ -1,8 +1,8 @@
 <?php
 
 /**
- * PollAdded
- * Notification Trigger for Adding a new Poll
+ * PollVoted
+ * Notification Trigger for voting on a Poll
  * 
  * @package warriorbeat
  * 
@@ -10,7 +10,7 @@
 
 namespace BracketSpace\Notification\WarriorBeat\Trigger\Poll;
 
-class PollAdded extends PollTrigger
+class PollVoted extends PollTrigger
 {
 
     /**
@@ -19,13 +19,13 @@ class PollAdded extends PollTrigger
     public function __construct()
     {
         parent::__construct(
-            'warriorbeat/poll_added',
-            __('Poll Added', 'notification')
+            'warriorbeat/poll_voted',
+            __('Poll Voted', 'notification')
         );
 
-        $this->add_action('wb_poll_added', 10, 2);
+        $this->add_action('wb_poll_voted', 10, 2);
         $this->set_description(
-            __('Fires when a new poll has been added', 'notification')
+            __('Fires when a poll is voted on', 'notification')
         );
 
     }
@@ -41,9 +41,7 @@ class PollAdded extends PollTrigger
             return false;
         }
 
-        $this->param = $param;
-        $this->poll = get_poll_template_by_me($param);
-        $this->poll['date'] = date('c');
+        $this->poll = $param;
         $poll_answers = $this->poll['answers'];
         foreach ($poll_answers as $key => $val) {
             $ans_id = $poll_answers[$key]->polla_aid;
@@ -57,7 +55,6 @@ class PollAdded extends PollTrigger
             );
         };
         $this->poll['answers'] = $poll_answers;
-
     }
 
 }
