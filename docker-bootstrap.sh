@@ -6,6 +6,9 @@ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.pha
 chmod +x wp-cli.phar
 mv wp-cli.phar /usr/local/bin/wp
 
+# WP Core
+wp core install --allow-root --url="http://localhost:3000" --title="WBLocalWP" --admin_user="admin" --admin_email="someone@gmail.com" --skip-email --admin_password="admin" 
+
 # WP Config
 echo "Setting WP Config Options"
 wp config set WP_HOME http://localhost:3000 --type=constant --allow-root
