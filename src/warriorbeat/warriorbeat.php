@@ -173,7 +173,7 @@ function insert_nest($args, $notif, $trigger)
 add_filter('notification/webhook/args', 'insert_nest', 10, 3);
 
 
-// Trigger Hooks
+// Post Trigger Hooks
 add_action('notification/trigger/registered', function ($trigger) {
 	$trig_slugs = array(
 		"wordpress/post/published",
@@ -216,6 +216,35 @@ add_action('notification/trigger/registered', function ($trigger) {
 		'name' => __('Nested Categories', 'Inserts Post Category data.'),
 		'resolver' => function ($trigger) {
 			return 'wb_nested_categories';
+		},
+	)));
+});
+
+// Media Trigger Register
+add_action('notification/trigger/registered', function ($trigger) {
+	$trig_slugs = array(
+		"wordpress/media_published",
+		"wordpress/media_updated"
+	);
+	if (!in_array($trigger->get_slug(), $trig_slugs)) {
+		return;
+	}
+	
+	// Media Caption
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'attachment_caption',
+		'name' => __('Attachment Caption', 'Inserts Attachment Caption.'),
+		'resolver' => function ($trigger) {
+			return $trigger->attachment->post_excerpt;
+		},
+	)));
+
+	// Media Credits
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'attachment_credits',
+		'name' => __('Attachment Credits', 'Inserts Attachment Credits.'),
+		'resolver' => function ($trigger) {
+			return get_post_meta($trigger->attachment->ID, "credit", true);
 		},
 	)));
 });
