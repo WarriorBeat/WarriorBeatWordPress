@@ -230,8 +230,8 @@ add_action('notification/trigger/registered', function ($trigger) {
 		'slug' => 'post_author_profile_image',
 		'name' => __('Post author Profile Image ID', 'Inserts Post Profile Image.'),
 		'resolver' => function ($trigger) {
-			$avatar_url = get_avatar_url($trigger->post->post_author->ID);
-			return attachment_url_to_postid($avatar_url);
+			$author_meta = get_user_meta($trigger->post->post_author);
+			return $author_meta['wp_metronet_image_id'][0];
 		},
 	)));
 
