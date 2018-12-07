@@ -116,27 +116,23 @@ function nest_author($args, $key, $trigger)
 	return $args;
 }
 
-// Nest Media Information
-function nest_media($source, $id, $title, $credits = '', $caption = '')
-{
-	$media = array(
-		'mediaId' => $id,
-		'source' => $source,
-		'title' => $title
-	);
-	return $media;
-
-}
 
 // Get Post Categories and return array of their data
-function nest_categories($post_ID)
+function nest_categories($post_ID, $id_only = false)
 {
 	$post_cats = wp_get_post_categories($post_ID);
 	$cats = array();
 
 	foreach ($post_cats as $c) {
 		$cat = get_category($c);
-		$cats[] = (string)$cat->cat_ID;
+		if (!$id_only) {
+			$cats[] = array(
+				'categoryId' => (string)$cat->cat_ID,
+				'name' => (string)$cat->name
+			);
+		} else {
+			$cats[] = (string)$cat->cat_ID;
+		}
 	}
 	return $cats;
 }
@@ -147,6 +143,10 @@ function insert_nest($args, $notif, $trigger)
 	foreach ($args as $key => $val) {
 		if (isset($trigger->$val)) {
 			$args[$key] = $trigger->$val;
+		}
+		if ($key == 'JSON_ARRAY') {
+			$to_wrap = $args[$key];
+			$args = $to_wrap;
 		}
 	}
 	return $args;
@@ -175,22 +175,77 @@ add_action('notification/trigger/registered', function ($trigger) {
 		},
 	)));
 
-	// Nested (Array of) Categories
+	// Nested (Array of) Categories Ids
 	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
-		'slug' => 'post_nested_categories',
-		'name' => __('Nested Categories', 'Inserts Post Category data.'),
+		'slug' => 'post_category_ids',
+		'name' => __('Categories ID List', 'Inserts Post Category ids.'),
+		'resolver' => function ($trigger) {
+			$trigger->nested_categories = nest_categories($trigger->post->ID, $id_only = true);
+			return 'nested_categories';
+		},
+	)));
+
+	// Nested (Array of) Categories Items
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_category_items',
+		'name' => __('Category Object List', 'Inserts Post Category data.'),
 		'resolver' => function ($trigger) {
 			$trigger->nested_categories = nest_categories($trigger->post->ID);
 			return 'nested_categories';
 		},
 	)));
 
-	// Featured Media
+	// Wraps data in Array
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'json_many',
+		'name' => __('Wrap JSON in Array', 'Wraps Json Data in Array'),
+		'resolver' => function ($trigger) {
+			return 'JSON_ARRAY';
+		},
+	)));
+
+	// Featured Media ID
 	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
 		'slug' => 'post_featured_media',
 		'name' => __('Post Featured Media', 'Inserts post thumbnail data.'),
 		'resolver' => function ($trigger) {
 			return get_post_thumbnail_id($trigger->post->ID);
+		},
+	)));
+
+	// Featured Media Direct URL
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_featured_direct',
+		'name' => __('Post Featured Media Direct URL', 'Inserts post thumbnail url.'),
+		'resolver' => function ($trigger) {
+			return get_the_post_thumbnail_url($trigger->post->ID);
+		},
+	)));
+
+	// Featured Media Caption
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_featured_caption',
+		'name' => __('Post Featured Media Caption', 'Inserts post thumbnail caption.'),
+		'resolver' => function ($trigger) {
+			return get_the_post_thumbnail_caption($trigger->post->ID);
+		},
+	)));
+
+	// Featured Media Credits
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_featured_credits',
+		'name' => __('Post Featured Media Credits', 'Inserts post thumbnail credits.'),
+		'resolver' => function ($trigger) {
+			return get_post_meta($trigger->attachment->ID, "credit", true);
+		},
+	)));
+
+	// Featured Media Title
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_featured_title',
+		'name' => __('Post Featured Media Title', 'Inserts post thumbnail title.'),
+		'resolver' => function ($trigger) {
+			return $trigger->feat_media->post_title;
 		},
 	)));
 

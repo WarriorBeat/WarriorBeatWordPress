@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.9.8" created="2018-12-07 15:21" -->
+<!-- generator="WordPress/4.9.8" created="2018-12-07 20:48" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -26,30 +26,30 @@
 >
 
 <channel>
-	<title>WBLocalWP</title>
+	<title>WBLocalTest</title>
 	<link>http://localhost:3000</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Fri, 07 Dec 2018 15:21:41 +0000</pubDate>
+	<pubDate>Fri, 07 Dec 2018 20:48:11 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost:3000</wp:base_site_url>
 	<wp:base_blog_url>http://localhost:3000</wp:base_blog_url>
 
-	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[someone@gmail.com]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[bradenmars02@gmail.com]]></wp:author_email><wp:author_display_name><![CDATA[Braden Mars]]></wp:author_display_name><wp:author_first_name><![CDATA[Braden]]></wp:author_first_name><wp:author_last_name><![CDATA[Mars]]></wp:author_last_name></wp:author>
 
 
 	<generator>https://wordpress.org/?v=4.9.8</generator>
 
 	<item>
 		<title>MediaAdded</title>
-		<link>http://localhost:3000/?post_type=notification&#038;p=7</link>
+		<link>http://localhost:3000/?post_type=notification&#038;p=690</link>
 		<pubDate>Wed, 05 Dec 2018 16:46:14 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=7</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>7</wp:post_id>
+		<wp:post_id>690</wp:post_id>
 		<wp:post_date><![CDATA[2018-12-05 16:46:14]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2018-12-05 16:46:14]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -84,14 +84,14 @@
 	</item>
 	<item>
 		<title>MediaUpdated</title>
-		<link>http://localhost:3000/?post_type=notification&#038;p=13</link>
+		<link>http://localhost:3000/?post_type=notification&#038;p=691</link>
 		<pubDate>Fri, 07 Dec 2018 02:57:58 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=13</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>13</wp:post_id>
+		<wp:post_id>691</wp:post_id>
 		<wp:post_date><![CDATA[2018-12-07 02:57:58]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2018-12-07 02:57:58]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -126,14 +126,14 @@
 	</item>
 	<item>
 		<title>MediaDeleted</title>
-		<link>http://localhost:3000/?post_type=notification&#038;p=20</link>
+		<link>http://localhost:3000/?post_type=notification&#038;p=692</link>
 		<pubDate>Fri, 07 Dec 2018 05:45:48 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=20</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>20</wp:post_id>
+		<wp:post_id>692</wp:post_id>
 		<wp:post_date><![CDATA[2018-12-07 05:45:48]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2018-12-07 05:45:48]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -168,19 +168,61 @@
 	</item>
 	<item>
 		<title>AuthorFromPost</title>
-		<link>http://localhost:3000/?post_type=notification&#038;p=22</link>
+		<link>http://localhost:3000/?post_type=notification&#038;p=693</link>
 		<pubDate>Fri, 07 Dec 2018 05:56:08 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=22</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>22</wp:post_id>
+		<wp:post_id>693</wp:post_id>
 		<wp:post_date><![CDATA[2018-12-07 05:56:08]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2018-12-07 05:56:08]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[authorfrompost]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[notification]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_trigger]]></wp:meta_key>
+			<wp:meta_value><![CDATA[wordpress/post/prepublished]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_enabled_notification]]></wp:meta_key>
+			<wp:meta_value><![CDATA[webhook]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_email]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{s:6:"_nonce";N;s:7:"subject";s:0:"";s:4:"body";s:0:"";s:10:"recipients";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:36:"http://e768d27b.ngrok.io/api/authors";}}s:4:"args";a:5:{i:0;a:2:{s:3:"key";s:8:"authorId";s:5:"value";s:21:"{post_author_user_ID}";}i:1;a:2:{s:3:"key";s:4:"name";s:5:"value";s:27:"{post_author_user_nicename}";}i:2;a:2:{s:3:"key";s:5:"title";s:5:"value";s:19:"{post_author_roles}";}i:3;a:2:{s:3:"key";s:11:"description";s:5:"value";s:17:"{post_author_bio}";}i:4;a:2:{s:3:"key";s:13:"profile_image";s:5:"value";s:27:"{post_author_profile_image}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>PostPublished</title>
+		<link>http://localhost:3000/?post_type=notification&#038;p=731</link>
+		<pubDate>Fri, 07 Dec 2018 17:10:47 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=731</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>731</wp:post_id>
+		<wp:post_date><![CDATA[2018-12-07 17:10:47]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-12-07 17:10:47]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[postpublished]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
@@ -205,7 +247,355 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:36:"http://e768d27b.ngrok.io/api/authors";}}s:4:"args";a:5:{i:0;a:2:{s:3:"key";s:8:"authorId";s:5:"value";s:21:"{post_author_user_ID}";}i:1;a:2:{s:3:"key";s:4:"name";s:5:"value";s:27:"{post_author_user_nicename}";}i:2;a:2:{s:3:"key";s:5:"title";s:5:"value";s:19:"{post_author_roles}";}i:3;a:2:{s:3:"key";s:11:"description";s:5:"value";s:17:"{post_author_bio}";}i:4;a:2:{s:3:"key";s:13:"profile_image";s:5:"value";s:27:"{post_author_profile_image}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:34:"http://e768d27b.ngrok.io/api/posts";}}s:4:"args";a:8:{i:0;a:2:{s:3:"key";s:6:"postId";s:5:"value";s:9:"{post_ID}";}i:1;a:2:{s:3:"key";s:5:"title";s:5:"value";s:12:"{post_title}";}i:2;a:2:{s:3:"key";s:4:"date";s:5:"value";s:25:"{post_create_datetimeiso}";}i:3;a:2:{s:3:"key";s:7:"content";s:5:"value";s:19:"{post_content_html}";}i:4;a:2:{s:3:"key";s:6:"author";s:5:"value";s:21:"{post_author_user_ID}";}i:5;a:2:{s:3:"key";s:11:"cover_image";s:5:"value";s:21:"{post_featured_media}";}i:6;a:2:{s:3:"key";s:10:"categories";s:5:"value";s:19:"{post_category_ids}";}i:7;a:2:{s:3:"key";s:4:"type";s:5:"value";s:7:"article";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>CategoryCreated</title>
+		<link>http://localhost:3000/?post_type=notification&#038;p=733</link>
+		<pubDate>Fri, 07 Dec 2018 17:15:06 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=733</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>733</wp:post_id>
+		<wp:post_date><![CDATA[2018-12-07 17:15:06]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-12-07 17:15:06]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[notification]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[draft]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1544202906]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>CategoryCreated</title>
+		<link>http://localhost:3000/?post_type=notification&#038;p=734</link>
+		<pubDate>Fri, 07 Dec 2018 17:15:59 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=734</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>734</wp:post_id>
+		<wp:post_date><![CDATA[2018-12-07 17:15:59]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-12-07 17:15:59]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[categorycreated]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[notification]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_trigger]]></wp:meta_key>
+			<wp:meta_value><![CDATA[wordpress/category/created]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_enabled_notification]]></wp:meta_key>
+			<wp:meta_value><![CDATA[webhook]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_email]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{s:6:"_nonce";N;s:7:"subject";s:0:"";s:4:"body";s:0:"";s:10:"recipients";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:39:"http://e768d27b.ngrok.io/api/categories";}}s:4:"args";a:2:{i:0;a:2:{s:3:"key";s:10:"categoryId";s:5:"value";s:9:"{term_ID}";}i:1;a:2:{s:3:"key";s:4:"name";s:5:"value";s:11:"{term_name}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>CategoryUpdated</title>
+		<link>http://localhost:3000/?post_type=notification&#038;p=748</link>
+		<pubDate>Fri, 07 Dec 2018 18:35:53 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=748</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>748</wp:post_id>
+		<wp:post_date><![CDATA[2018-12-07 18:35:53]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-12-07 18:35:53]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[categoryupdated]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[notification]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_trigger]]></wp:meta_key>
+			<wp:meta_value><![CDATA[wordpress/category/updated]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_enabled_notification]]></wp:meta_key>
+			<wp:meta_value><![CDATA[webhook]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_email]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{s:6:"_nonce";N;s:7:"subject";s:0:"";s:4:"body";s:0:"";s:10:"recipients";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:49:"http://e768d27b.ngrok.io/api/categories/{term_ID}";}}s:4:"args";a:2:{i:0;a:2:{s:3:"key";s:4:"name";s:5:"value";s:11:"{term_name}";}i:1;a:2:{s:3:"key";s:10:"categoryId";s:5:"value";s:9:"{term_ID}";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:3:"PUT";}}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>CategoryDeleted</title>
+		<link>http://localhost:3000/?post_type=notification&#038;p=749</link>
+		<pubDate>Fri, 07 Dec 2018 18:38:31 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=749</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>749</wp:post_id>
+		<wp:post_date><![CDATA[2018-12-07 18:38:31]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-12-07 18:38:31]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[duplicate-categoryupdated]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[notification]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_trigger]]></wp:meta_key>
+			<wp:meta_value><![CDATA[wordpress/category/deleted]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_enabled_notification]]></wp:meta_key>
+			<wp:meta_value><![CDATA[webhook]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_email]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{s:6:"_nonce";N;s:7:"subject";s:0:"";s:4:"body";s:0:"";s:10:"recipients";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:49:"http://e768d27b.ngrok.io/api/categories/{term_ID}";}}s:4:"args";a:0:{}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:6:"DELETE";}}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>CategoryFromPost</title>
+		<link>http://localhost:3000/?post_type=notification&#038;p=752</link>
+		<pubDate>Fri, 07 Dec 2018 19:01:34 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=752</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>752</wp:post_id>
+		<wp:post_date><![CDATA[2018-12-07 19:01:34]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-12-07 19:01:34]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[categoryfrompost]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[notification]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_trigger]]></wp:meta_key>
+			<wp:meta_value><![CDATA[wordpress/post/prepublished]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_enabled_notification]]></wp:meta_key>
+			<wp:meta_value><![CDATA[webhook]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_email]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{s:6:"_nonce";N;s:7:"subject";s:0:"";s:4:"body";s:0:"";s:10:"recipients";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:39:"http://e768d27b.ngrok.io/api/categories";}}s:4:"args";a:1:{i:0;a:2:{s:3:"key";s:11:"{json_many}";s:5:"value";s:21:"{post_category_items}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>MediaFromPost</title>
+		<link>http://localhost:3000/?post_type=notification&#038;p=806</link>
+		<pubDate>Fri, 07 Dec 2018 20:01:29 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=806</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>806</wp:post_id>
+		<wp:post_date><![CDATA[2018-12-07 20:01:29]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-12-07 20:01:29]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[mediafrompost-2__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[notification]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_trigger]]></wp:meta_key>
+			<wp:meta_value><![CDATA[wordpress/post/prepublished]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_email]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{s:6:"_nonce";N;s:7:"subject";s:0:"";s:4:"body";s:0:"";s:10:"recipients";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:39:"http://e768d27b.ngrok.io/api/categories";}}s:4:"args";a:1:{i:0;a:2:{s:3:"key";s:11:"{json_many}";s:5:"value";s:21:"{post_category_items}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1544212919]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[mediafrompost-2]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>MediaFromPost</title>
+		<link>http://localhost:3000/?post_type=notification&#038;p=807</link>
+		<pubDate>Fri, 07 Dec 2018 19:59:58 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=807</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>807</wp:post_id>
+		<wp:post_date><![CDATA[2018-12-07 19:59:58]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-12-07 19:59:58]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[mediafrompost]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[notification]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_trigger]]></wp:meta_key>
+			<wp:meta_value><![CDATA[wordpress/post/prepublished]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_email]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{s:6:"_nonce";N;s:7:"subject";s:0:"";s:4:"body";s:0:"";s:10:"recipients";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:56:"http://e768d27b.ngrok.io/api/media/{post_featured_media}";}}s:4:"args";a:6:{i:0;a:2:{s:3:"key";s:7:"mediaId";s:5:"value";s:21:"{post_featured_media}";}i:1;a:2:{s:3:"key";s:6:"source";s:5:"value";s:22:"{post_featured_direct}";}i:2;a:2:{s:3:"key";s:7:"credits";s:5:"value";s:23:"{post_featured_credits}";}i:3;a:2:{s:3:"key";s:7:"caption";s:5:"value";s:23:"{post_featured_caption}";}i:4;a:2:{s:3:"key";s:4:"type";s:5:"value";s:11:"cover-image";}i:5;a:2:{s:3:"key";s:5:"title";s:5:"value";s:21:"{post_featured_title}";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:3:"PUT";}}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_enabled_notification]]></wp:meta_key>
+			<wp:meta_value><![CDATA[webhook]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>(Duplicate) MediaFromPost</title>
+		<link>http://localhost:3000/?post_type=notification&#038;p=820</link>
+		<pubDate>Fri, 07 Dec 2018 20:06:15 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=820</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>820</wp:post_id>
+		<wp:post_date><![CDATA[2018-12-07 20:06:15]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-12-07 20:06:15]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[duplicate-mediafrompost__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[notification]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_trigger]]></wp:meta_key>
+			<wp:meta_value><![CDATA[wordpress/post/prepublished]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_email]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{s:6:"_nonce";N;s:7:"subject";s:0:"";s:4:"body";s:0:"";s:10:"recipients";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:56:"http://e768d27b.ngrok.io/api/media/{post_featured_media}";}}s:4:"args";a:6:{i:0;a:2:{s:3:"key";s:7:"mediaId";s:5:"value";s:21:"{post_featured_media}";}i:1;a:2:{s:3:"key";s:6:"source";s:5:"value";s:0:"";}i:2;a:2:{s:3:"key";s:7:"credits";s:5:"value";s:0:"";}i:3;a:2:{s:3:"key";s:7:"caption";s:5:"value";s:0:"";}i:4;a:2:{s:3:"key";s:4:"type";s:5:"value";s:11:"cover-image";}i:5;a:2:{s:3:"key";s:5:"title";s:5:"value";s:0:"";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:3:"PUT";}}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[draft]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1544213509]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[duplicate-mediafrompost]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>
