@@ -84,7 +84,8 @@ abstract class PollTrigger extends \BracketSpace\Notification\Abstracts\Trigger
             'slug' => 'poll_answers',
             'name' => __('Poll Answers', 'Inserts Poll Answers.'),
             'resolver' => function ($trigger) {
-                return 'wb_nested_poll_answers';
+                $trigger->poll_answers = $trigger->poll['answers'];
+                return 'poll_answers';
             },
         )));
 

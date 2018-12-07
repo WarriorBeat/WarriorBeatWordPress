@@ -148,24 +148,8 @@ function nest_categories($post_ID)
 function insert_nest($args, $notif, $trigger)
 {
 	foreach ($args as $key => $val) {
-		if ((string)$val == 'wb_nested_author') {
-			$args = nest_author($args, $key, $trigger);
-		}
-		if ((string)$val == 'wb_featured_media') {
-			$thumb_url = get_the_post_thumbnail_url($trigger->post->ID);
-			$thumb_caption = get_the_post_thumbnail_caption($trigger->post->ID);
-			$thumb_id = get_post_thumbnail_id($trigger->post->ID);
-			$thumb_title = $trigger->post->post_title;
-			$args[$key] = nest_media($thumb_url, $thumb_id, $thumb_title, '', $thumb_caption);
-		}
-		if ((string)$val == 'wb_nested_categories') {
-			$args[$key] = nest_categories($trigger->post->ID);
-		}
-		if ((string)$val == 'wb_iso_createdate') {
-			$args[$key] = get_the_date('c', $trigger->post->ID);
-		}
-		if ((string)$val == 'wb_nested_poll_answers') {
-			$args[$key] = $trigger->poll['answers'];
+		if (isset($trigger->$val)) {
+			$args[$key] = $trigger->$val;
 		}
 	}
 	return $args;
@@ -177,9 +161,10 @@ add_filter('notification/webhook/args', 'insert_nest', 10, 3);
 add_action('notification/trigger/registered', function ($trigger) {
 	$trig_slugs = array(
 		"wordpress/post/published",
-		"wordpress/post/updated"
+		"wordpress/post/updated",
+		"wordpress/post/added"
 	);
-	if (!in_array($trigger->get_slug(), $trig_slugs)) {
+	if (is_array($trigger->get_slug(), $trig_slugs)) {
 		return;
 	}
 
@@ -218,6 +203,39 @@ add_action('notification/trigger/registered', function ($trigger) {
 			return 'wb_nested_categories';
 		},
 	)));
+
+	// Post Author Bio
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_author_bio',
+		'name' => __('Post author Bio', 'Inserts Post Author Bio.'),
+		'resolver' => function ($trigger) {
+			$author_meta = get_user_meta($trigger->post->post_author);
+			return $author_meta->description != null ? $author_meta->description : "Staff Member";
+		},
+	)));
+
+	// Post Author Roles
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_author_roles',
+		'name' => __('Post author Roles', 'Inserts Post Author Roles.'),
+		'resolver' => function ($trigger) {
+			$user = get_userdata($trigger->post->post_author);
+			$trigger->post_author_roles = $user->roles;
+			return 'post_author_roles';
+		},
+	)));
+
+	// Post Author Profile Media Id
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_author_profile_image',
+		'name' => __('Post author Profile Image ID', 'Inserts Post Profile Image.'),
+		'resolver' => function ($trigger) {
+			$avatar_url = get_avatar_url($trigger->post->post_author->ID);
+			return attachment_url_to_postid($avatar_url);
+		},
+	)));
+
+
 });
 
 // Media Trigger Register
