@@ -136,10 +136,7 @@ function nest_categories($post_ID)
 
 	foreach ($post_cats as $c) {
 		$cat = get_category($c);
-		$cats[] = array(
-			'categoryId' => (string)$cat->cat_ID,
-			'name' => (string)$cat->name
-		);
+		$cats[] = (string)$cat->cat_ID;
 	}
 	return $cats;
 }
@@ -162,7 +159,8 @@ add_action('notification/trigger/registered', function ($trigger) {
 	$trig_slugs = array(
 		"wordpress/post/published",
 		"wordpress/post/updated",
-		"wordpress/post/added"
+		"wordpress/post/added",
+		"wordpress/post/prepublished"
 	);
 	if (!in_array($trigger->get_slug(), $trig_slugs)) {
 		return;
@@ -173,25 +171,7 @@ add_action('notification/trigger/registered', function ($trigger) {
 		'slug' => 'post_create_datetimeiso',
 		'name' => __('Post ISO Create Datetime', 'Get Creation date of Post in ISO format.'),
 		'resolver' => function ($trigger) {
-			return 'wb_iso_createdate';
-		},
-	)));
-
-	// Nested Author
-	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
-		'slug' => 'post_nest_author',
-		'name' => __('Nested Author Data', 'Inserts author data to post request.'),
-		'resolver' => function ($trigger) {
-			return 'wb_nested_author';
-		},
-	)));
-
-	// Nested Featured Media
-	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
-		'slug' => 'post_featured_media',
-		'name' => __('Post Featured Media', 'Inserts post thumbnail data.'),
-		'resolver' => function ($trigger) {
-			return 'wb_featured_media';
+			return get_the_date('c', $trigger->post->ID);
 		},
 	)));
 
@@ -200,7 +180,17 @@ add_action('notification/trigger/registered', function ($trigger) {
 		'slug' => 'post_nested_categories',
 		'name' => __('Nested Categories', 'Inserts Post Category data.'),
 		'resolver' => function ($trigger) {
-			return 'wb_nested_categories';
+			$trigger->nested_categories = nest_categories($trigger->post->ID);
+			return 'nested_categories';
+		},
+	)));
+
+	// Featured Media
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_featured_media',
+		'name' => __('Post Featured Media', 'Inserts post thumbnail data.'),
+		'resolver' => function ($trigger) {
+			return get_post_thumbnail_id($trigger->post->ID);
 		},
 	)));
 
@@ -289,3 +279,4 @@ add_action('wp_polls_vote_poll_success', function () {
 // Register Custom Triggers
 register_trigger(new BracketSpace\Notification\WarriorBeat\Trigger\Poll\PollAdded());
 register_trigger(new BracketSpace\Notification\WarriorBeat\Trigger\Poll\PollVoted());
+register_trigger(new BracketSpace\Notification\WarriorBeat\Trigger\Post\PostPrePublished());
