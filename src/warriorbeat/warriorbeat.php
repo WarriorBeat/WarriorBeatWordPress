@@ -164,7 +164,7 @@ add_action('notification/trigger/registered', function ($trigger) {
 		"wordpress/post/updated",
 		"wordpress/post/added"
 	);
-	if (is_array($trigger->get_slug(), $trig_slugs)) {
+	if (!in_array($trigger->get_slug(), $trig_slugs)) {
 		return;
 	}
 
