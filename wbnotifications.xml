@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.9.8" created="2018-12-07 20:48" -->
+<!-- generator="WordPress/4.9.8" created="2018-12-09 02:40" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>WBLocalTest</title>
 	<link>http://localhost:3000</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Fri, 07 Dec 2018 20:48:11 +0000</pubDate>
+	<pubDate>Sun, 09 Dec 2018 02:40:20 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost:3000</wp:base_site_url>
@@ -79,7 +79,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:34:"http://e768d27b.ngrok.io/api/media";}}s:4:"args";a:6:{i:0;a:2:{s:3:"key";s:7:"mediaId";s:5:"value";s:15:"{attachment_ID}";}i:1;a:2:{s:3:"key";s:6:"source";s:5:"value";s:23:"{attachment_direct_url}";}i:2;a:2:{s:3:"key";s:7:"credits";s:5:"value";s:20:"{attachment_credits}";}i:3;a:2:{s:3:"key";s:7:"caption";s:5:"value";s:20:"{attachment_caption}";}i:4;a:2:{s:3:"key";s:4:"type";s:5:"value";s:5:"image";}i:5;a:2:{s:3:"key";s:5:"title";s:5:"value";s:18:"{attachment_title}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:34:"http://08dad290.ngrok.io/api/media";}}s:4:"args";a:6:{i:0;a:2:{s:3:"key";s:7:"mediaId";s:5:"value";s:15:"{attachment_ID}";}i:1;a:2:{s:3:"key";s:6:"source";s:5:"value";s:23:"{attachment_direct_url}";}i:2;a:2:{s:3:"key";s:7:"credits";s:5:"value";s:20:"{attachment_credits}";}i:3;a:2:{s:3:"key";s:7:"caption";s:5:"value";s:20:"{attachment_caption}";}i:4;a:2:{s:3:"key";s:4:"type";s:5:"value";s:5:"image";}i:5;a:2:{s:3:"key";s:5:"title";s:5:"value";s:18:"{attachment_title}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -121,7 +121,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:50:"http://e768d27b.ngrok.io/api/media/{attachment_ID}";}}s:4:"args";a:6:{i:0;a:2:{s:3:"key";s:7:"mediaId";s:5:"value";s:15:"{attachment_ID}";}i:1;a:2:{s:3:"key";s:6:"source";s:5:"value";s:23:"{attachment_direct_url}";}i:2;a:2:{s:3:"key";s:7:"credits";s:5:"value";s:20:"{attachment_credits}";}i:3;a:2:{s:3:"key";s:7:"caption";s:5:"value";s:20:"{attachment_caption}";}i:4;a:2:{s:3:"key";s:4:"type";s:5:"value";s:5:"image";}i:5;a:2:{s:3:"key";s:5:"title";s:5:"value";s:18:"{attachment_title}";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:3:"PUT";}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:50:"http://08dad290.ngrok.io/api/media/{attachment_ID}";}}s:4:"args";a:6:{i:0;a:2:{s:3:"key";s:7:"mediaId";s:5:"value";s:15:"{attachment_ID}";}i:1;a:2:{s:3:"key";s:6:"source";s:5:"value";s:23:"{attachment_direct_url}";}i:2;a:2:{s:3:"key";s:7:"credits";s:5:"value";s:20:"{attachment_credits}";}i:3;a:2:{s:3:"key";s:7:"caption";s:5:"value";s:20:"{attachment_caption}";}i:4;a:2:{s:3:"key";s:4:"type";s:5:"value";s:5:"image";}i:5;a:2:{s:3:"key";s:5:"title";s:5:"value";s:18:"{attachment_title}";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:3:"PUT";}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -163,7 +163,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:50:"http://e768d27b.ngrok.io/api/media/{attachment_ID}";}}s:4:"args";a:0:{}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:6:"DELETE";}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:50:"http://08dad290.ngrok.io/api/media/{attachment_ID}";}}s:4:"args";a:0:{}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:6:"DELETE";}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -205,7 +205,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:36:"http://e768d27b.ngrok.io/api/authors";}}s:4:"args";a:5:{i:0;a:2:{s:3:"key";s:8:"authorId";s:5:"value";s:21:"{post_author_user_ID}";}i:1;a:2:{s:3:"key";s:4:"name";s:5:"value";s:27:"{post_author_user_nicename}";}i:2;a:2:{s:3:"key";s:5:"title";s:5:"value";s:19:"{post_author_roles}";}i:3;a:2:{s:3:"key";s:11:"description";s:5:"value";s:17:"{post_author_bio}";}i:4;a:2:{s:3:"key";s:13:"profile_image";s:5:"value";s:27:"{post_author_profile_image}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:36:"http://08dad290.ngrok.io/api/authors";}}s:4:"args";a:5:{i:0;a:2:{s:3:"key";s:8:"authorId";s:5:"value";s:21:"{post_author_user_ID}";}i:1;a:2:{s:3:"key";s:4:"name";s:5:"value";s:27:"{post_author_user_nicename}";}i:2;a:2:{s:3:"key";s:5:"title";s:5:"value";s:19:"{post_author_roles}";}i:3;a:2:{s:3:"key";s:11:"description";s:5:"value";s:17:"{post_author_bio}";}i:4;a:2:{s:3:"key";s:13:"profile_image";s:5:"value";s:27:"{post_author_profile_image}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -247,45 +247,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:34:"http://e768d27b.ngrok.io/api/posts";}}s:4:"args";a:8:{i:0;a:2:{s:3:"key";s:6:"postId";s:5:"value";s:9:"{post_ID}";}i:1;a:2:{s:3:"key";s:5:"title";s:5:"value";s:12:"{post_title}";}i:2;a:2:{s:3:"key";s:4:"date";s:5:"value";s:25:"{post_create_datetimeiso}";}i:3;a:2:{s:3:"key";s:7:"content";s:5:"value";s:19:"{post_content_html}";}i:4;a:2:{s:3:"key";s:6:"author";s:5:"value";s:21:"{post_author_user_ID}";}i:5;a:2:{s:3:"key";s:11:"cover_image";s:5:"value";s:21:"{post_featured_media}";}i:6;a:2:{s:3:"key";s:10:"categories";s:5:"value";s:19:"{post_category_ids}";}i:7;a:2:{s:3:"key";s:4:"type";s:5:"value";s:7:"article";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>CategoryCreated</title>
-		<link>http://localhost:3000/?post_type=notification&#038;p=733</link>
-		<pubDate>Fri, 07 Dec 2018 17:15:06 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=733</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>733</wp:post_id>
-		<wp:post_date><![CDATA[2018-12-07 17:15:06]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-12-07 17:15:06]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[notification]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[draft]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1544202906]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:34:"http://08dad290.ngrok.io/api/posts";}}s:4:"args";a:8:{i:0;a:2:{s:3:"key";s:6:"postId";s:5:"value";s:9:"{post_ID}";}i:1;a:2:{s:3:"key";s:5:"title";s:5:"value";s:12:"{post_title}";}i:2;a:2:{s:3:"key";s:4:"date";s:5:"value";s:25:"{post_create_datetimeiso}";}i:3;a:2:{s:3:"key";s:7:"content";s:5:"value";s:19:"{post_content_html}";}i:4;a:2:{s:3:"key";s:6:"author";s:5:"value";s:21:"{post_author_user_ID}";}i:5;a:2:{s:3:"key";s:11:"cover_image";s:5:"value";s:21:"{post_featured_media}";}i:6;a:2:{s:3:"key";s:10:"categories";s:5:"value";s:19:"{post_category_ids}";}i:7;a:2:{s:3:"key";s:4:"type";s:5:"value";s:7:"article";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -327,7 +289,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:39:"http://e768d27b.ngrok.io/api/categories";}}s:4:"args";a:2:{i:0;a:2:{s:3:"key";s:10:"categoryId";s:5:"value";s:9:"{term_ID}";}i:1;a:2:{s:3:"key";s:4:"name";s:5:"value";s:11:"{term_name}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:39:"http://08dad290.ngrok.io/api/categories";}}s:4:"args";a:2:{i:0;a:2:{s:3:"key";s:10:"categoryId";s:5:"value";s:9:"{term_ID}";}i:1;a:2:{s:3:"key";s:4:"name";s:5:"value";s:11:"{term_name}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -369,7 +331,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:49:"http://e768d27b.ngrok.io/api/categories/{term_ID}";}}s:4:"args";a:2:{i:0;a:2:{s:3:"key";s:4:"name";s:5:"value";s:11:"{term_name}";}i:1;a:2:{s:3:"key";s:10:"categoryId";s:5:"value";s:9:"{term_ID}";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:3:"PUT";}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:49:"http://08dad290.ngrok.io/api/categories/{term_ID}";}}s:4:"args";a:2:{i:0;a:2:{s:3:"key";s:4:"name";s:5:"value";s:11:"{term_name}";}i:1;a:2:{s:3:"key";s:10:"categoryId";s:5:"value";s:9:"{term_ID}";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:3:"PUT";}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -411,7 +373,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:49:"http://e768d27b.ngrok.io/api/categories/{term_ID}";}}s:4:"args";a:0:{}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:6:"DELETE";}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:49:"http://08dad290.ngrok.io/api/categories/{term_ID}";}}s:4:"args";a:0:{}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:6:"DELETE";}}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -453,57 +415,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:39:"http://e768d27b.ngrok.io/api/categories";}}s:4:"args";a:1:{i:0;a:2:{s:3:"key";s:11:"{json_many}";s:5:"value";s:21:"{post_category_items}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>MediaFromPost</title>
-		<link>http://localhost:3000/?post_type=notification&#038;p=806</link>
-		<pubDate>Fri, 07 Dec 2018 20:01:29 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=806</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>806</wp:post_id>
-		<wp:post_date><![CDATA[2018-12-07 20:01:29]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-12-07 20:01:29]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[mediafrompost-2__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[notification]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_trigger]]></wp:meta_key>
-			<wp:meta_value><![CDATA[wordpress/post/prepublished]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_notification_type_email]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:4:{s:6:"_nonce";N;s:7:"subject";s:0:"";s:4:"body";s:0:"";s:10:"recipients";a:0:{}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:39:"http://e768d27b.ngrok.io/api/categories";}}s:4:"args";a:1:{i:0;a:2:{s:3:"key";s:11:"{json_many}";s:5:"value";s:21:"{post_category_items}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1544212919]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[mediafrompost-2]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:39:"http://08dad290.ngrok.io/api/categories";}}s:4:"args";a:1:{i:0;a:2:{s:3:"key";s:11:"{json_many}";s:5:"value";s:21:"{post_category_items}";}}s:4:"json";i:1;s:7:"headers";a:0:{}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -541,7 +453,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:56:"http://e768d27b.ngrok.io/api/media/{post_featured_media}";}}s:4:"args";a:6:{i:0;a:2:{s:3:"key";s:7:"mediaId";s:5:"value";s:21:"{post_featured_media}";}i:1;a:2:{s:3:"key";s:6:"source";s:5:"value";s:22:"{post_featured_direct}";}i:2;a:2:{s:3:"key";s:7:"credits";s:5:"value";s:23:"{post_featured_credits}";}i:3;a:2:{s:3:"key";s:7:"caption";s:5:"value";s:23:"{post_featured_caption}";}i:4;a:2:{s:3:"key";s:4:"type";s:5:"value";s:11:"cover-image";}i:5;a:2:{s:3:"key";s:5:"title";s:5:"value";s:21:"{post_featured_title}";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:3:"PUT";}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:56:"http://08dad290.ngrok.io/api/media/{post_featured_media}";}}s:4:"args";a:6:{i:0;a:2:{s:3:"key";s:7:"mediaId";s:5:"value";s:21:"{post_featured_media}";}i:1;a:2:{s:3:"key";s:6:"source";s:5:"value";s:22:"{post_featured_direct}";}i:2;a:2:{s:3:"key";s:7:"credits";s:5:"value";s:23:"{post_featured_credits}";}i:3;a:2:{s:3:"key";s:7:"caption";s:5:"value";s:23:"{post_featured_caption}";}i:4;a:2:{s:3:"key";s:4:"type";s:5:"value";s:11:"cover-image";}i:5;a:2:{s:3:"key";s:5:"title";s:5:"value";s:21:"{post_featured_title}";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:3:"PUT";}}}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_enabled_notification]]></wp:meta_key>
@@ -549,21 +461,21 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>(Duplicate) MediaFromPost</title>
-		<link>http://localhost:3000/?post_type=notification&#038;p=820</link>
-		<pubDate>Fri, 07 Dec 2018 20:06:15 +0000</pubDate>
+		<title>AvatarFromProfileUpdate</title>
+		<link>http://localhost:3000/?post_type=notification&#038;p=837</link>
+		<pubDate>Sun, 09 Dec 2018 01:30:16 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=820</guid>
+		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=837</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>820</wp:post_id>
-		<wp:post_date><![CDATA[2018-12-07 20:06:15]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-12-07 20:06:15]]></wp:post_date_gmt>
+		<wp:post_id>837</wp:post_id>
+		<wp:post_date><![CDATA[2018-12-09 01:30:16]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-12-09 01:30:16]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[duplicate-mediafrompost__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_name><![CDATA[avatarfromprofileupdate]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[notification]]></wp:post_type>
@@ -575,7 +487,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_trigger]]></wp:meta_key>
-			<wp:meta_value><![CDATA[wordpress/post/prepublished]]></wp:meta_value>
+			<wp:meta_value><![CDATA[wordpress/user_profile_updated]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_email]]></wp:meta_key>
@@ -583,19 +495,53 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:56:"http://e768d27b.ngrok.io/api/media/{post_featured_media}";}}s:4:"args";a:6:{i:0;a:2:{s:3:"key";s:7:"mediaId";s:5:"value";s:21:"{post_featured_media}";}i:1;a:2:{s:3:"key";s:6:"source";s:5:"value";s:0:"";}i:2;a:2:{s:3:"key";s:7:"credits";s:5:"value";s:0:"";}i:3;a:2:{s:3:"key";s:7:"caption";s:5:"value";s:0:"";}i:4;a:2:{s:3:"key";s:4:"type";s:5:"value";s:11:"cover-image";}i:5;a:2:{s:3:"key";s:5:"title";s:5:"value";s:0:"";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:3:"PUT";}}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:58:"http://08dad290.ngrok.io/api/media/{user_profile_image_id}";}}s:4:"args";a:4:{i:0;a:2:{s:3:"key";s:7:"mediaId";s:5:"value";s:23:"{user_profile_image_id}";}i:1;a:2:{s:3:"key";s:6:"source";s:5:"value";s:27:"{user_profile_image_source}";}i:2;a:2:{s:3:"key";s:4:"type";s:5:"value";s:13:"profile-image";}i:3;a:2:{s:3:"key";s:5:"title";s:5:"value";s:26:"{user_profile_image_title}";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:3:"PUT";}}}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[draft]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_enabled_notification]]></wp:meta_key>
+			<wp:meta_value><![CDATA[webhook]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>AuthorUpdate</title>
+		<link>http://localhost:3000/?post_type=notification&#038;p=842</link>
+		<pubDate>Sun, 09 Dec 2018 02:31:48 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:3000/?post_type=notification&#038;p=842</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>842</wp:post_id>
+		<wp:post_date><![CDATA[2018-12-09 02:31:48]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-12-09 02:31:48]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[authorupdate]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[notification]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1544213509]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_trigger]]></wp:meta_key>
+			<wp:meta_value><![CDATA[wordpress/user_profile_updated]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[duplicate-mediafrompost]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_notification_type_email]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{s:6:"_nonce";N;s:7:"subject";s:0:"";s:4:"body";s:0:"";s:10:"recipients";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_notification_type_webhook]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:6:"_nonce";N;s:4:"urls";a:1:{i:0;a:2:{s:4:"type";s:4:"post";s:9:"recipient";s:46:"http://08dad290.ngrok.io/api/authors/{user_ID}";}}s:4:"args";a:4:{i:0;a:2:{s:3:"key";s:4:"name";s:5:"value";s:15:"{user_nicename}";}i:1;a:2:{s:3:"key";s:5:"title";s:5:"value";s:19:"{post_author_roles}";}i:2;a:2:{s:3:"key";s:11:"description";s:5:"value";s:10:"{user_bio}";}i:3;a:2:{s:3:"key";s:13:"profile_image";s:5:"value";s:23:"{user_profile_image_id}";}}s:4:"json";i:1;s:7:"headers";a:1:{i:0;a:2:{s:3:"key";s:22:"X-Http-Method-Override";s:5:"value";s:5:"PATCH";}}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_enabled_notification]]></wp:meta_key>
+			<wp:meta_value><![CDATA[webhook]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>

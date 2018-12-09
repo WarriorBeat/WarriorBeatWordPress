@@ -160,7 +160,7 @@ add_action('notification/trigger/registered', function ($trigger) {
 		"wordpress/post/published",
 		"wordpress/post/updated",
 		"wordpress/post/added",
-		"wordpress/post/prepublished"
+		"wordpress/post/prepublished",
 	);
 	if (!in_array($trigger->get_slug(), $trig_slugs)) {
 		return;
@@ -310,6 +310,56 @@ add_action('notification/trigger/registered', function ($trigger) {
 			return get_post_meta($trigger->attachment->ID, "credit", true);
 		},
 	)));
+});
+
+// User Profile Merge Tags
+add_action("notification/trigger/registered", function ($trigger) {
+	$trig_slugs = array(
+		"wordpress/user_profile_updated",
+	);
+	if (!in_array($trigger->get_slug(), $trig_slugs)) {
+		return;
+	}
+
+	// Profile Image ID
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'user_profile_image_id',
+		'name' => __('New Profile Image ID', 'Inserts Attachment ID.'),
+		'resolver' => function ($trigger) {
+			return $trigger->user_meta['wp_metronet_image_id'][0];
+		}
+	)));
+
+	// Profile Image Source
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'user_profile_image_source',
+		'name' => __('New Profile Image Source', 'Inserts Attachment Source URL.'),
+		'resolver' => function ($trigger) {
+			return get_avatar_url($trigger->user_id, array('size' => 512));
+		}
+	)));
+
+	// Profile Image Title
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'user_profile_image_title',
+		'name' => __('New Profile Image Title', 'Inserts Attachment Title.'),
+		'resolver' => function ($trigger) {
+			$attachment = get_post($trigger->user_meta['wp_metronet_image_id'][0]);
+			return $attachment->post_title;
+		}
+	)));
+
+	// Profile Roles
+	$trigger->add_merge_tag(new BracketSpace\Notification\Defaults\MergeTag\StringTag(array(
+		'slug' => 'post_author_roles',
+		'name' => __('Post author Roles', 'Inserts Post Author Roles.'),
+		'resolver' => function ($trigger) {
+			$user = get_userdata($trigger->user_id);
+			$trigger->post_author_roles = $user->roles;
+			return 'post_author_roles';
+		},
+	)));
+
 });
 
 // On new Poll
